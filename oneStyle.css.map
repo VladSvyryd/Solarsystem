@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "oneStyle.css",
+  "sources": [
+    "oneStyle.sass"
+  ],
+  "mappings": ";AAAA,AAAA,IAAI,CAAC;EACJ,UAAU,EAAE,KAAM,GAAG;;;AACtB,AAAA,EAAE,CAAC;EACF,OAAO,EAAE,YAAa,GAAG;;;AAC1B,AAAA,EAAE,CAAC;EACF,OAAO,EAAE,MAAO,GAAG",
+  "names": []
+}

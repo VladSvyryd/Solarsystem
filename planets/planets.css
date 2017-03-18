@@ -1,0 +1,78 @@
+/* line 1, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+*, * ::before, * ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 5, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+html {
+  height: 100%;
+  width: 100%; }
+
+/* line 8, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+body {
+  height: 100%;
+  background-image: url(/img/bgd.jpg);
+  background-attachment: fixed; }
+
+/* line 12, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+ul {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: center; }
+
+/* line 18, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+li {
+  display: flex;
+  background-color: orange;
+  width: 8em;
+  height: 2em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  border: solid 1.2px; }
+
+/* line 28, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+li a {
+  text-decoration: none;
+  vertical-align: middle;
+  color: #455a64;
+  font-weight: 700; }
+
+/* line 33, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+.pltcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 100vh; }
+
+/* line 44, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+img {
+  height: 600px;
+  width: auto;
+  border-radius: 50%; }
+
+/* line 49, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+.boxshadow {
+  position: absolute;
+  top: 40px;
+  width: 515px;
+  height: 515px;
+  border-radius: 50%;
+  box-shadow: 20px -10px 60px 5px; }
+
+/* line 58, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+article {
+  background-color: rgba(79, 91, 102, 0.7);
+  z-index: 100;
+  box-shadow: 0px -50px 90px 10px;
+  font-size: 1.2em; }
+
+/* line 64, C:/Users/vlad/Desktop/WebSeite/planets/planets.sass */
+p {
+  padding: 10px 80px;
+  font-weight: 600; }
+
+/*# sourceMappingURL=planets.css.map */

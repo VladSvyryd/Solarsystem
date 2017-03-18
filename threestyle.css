@@ -1,0 +1,374 @@
+/* line 1, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+*, * ::before, * ::after {
+  box-sizing: border-box; }
+
+/* line 3, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+html {
+  height: 100%;
+  width: 100%; }
+
+/* line 6, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+/* line 11, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+.placeholder {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/threebcg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+  flex-flow: column;
+    flex-flow-position: absolute; }
+
+/* line 25, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+.placeholdersun {
+  display: flex;
+  width: 300px;
+  height: 300px;
+    height-transform-style: preserve-3d; }
+
+/* line 33, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+.placeholdersun img {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  position: absolute; }
+
+/* line 39, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+.placeholdersun img:nth-child(1) {
+  z-index: 2; }
+
+/* line 41, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+.placeholdersun img:nth-child(2) {
+  animation: myOrbit 8s linear infinite;
+  transform-style: preserve-3d;
+  z-index: 1; }
+
+@keyframes ok {
+  0% {
+    transform: translateX(150px) scale(1); }
+  25% {
+    transform: translateX(0px) scale(1.2); }
+  50% {
+    transform: translateX(-150px) scale(1); }
+  75% {
+    transform: translateX(0px) scale(0.8); }
+  100% {
+    transform: translateX(150px) scale(1); } }
+
+@keyframes myOrbit {
+  0% {
+    transform: rotateZ(0deg) translateZ(0px); }
+  100% {
+    transform: rotateZ(-360deg) translateZ(300px); } }
+
+/* line 72, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+nav {
+  position: relative;
+  top: -125px;
+  text-align: center;
+  z-index: 100;
+  display: block; }
+  /* line 79, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #ddd;
+    border-radius: 5px; }
+    /* line 87, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+    nav > ul > li {
+      float: left;
+      width: 100px;
+      height: 45px;
+      line-height: 45px;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.7);
+      cursor: pointer; }
+      /* line 98, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+      nav > ul > li:hover {
+        background: #d5d5d5;
+        border-radius: 5px; }
+
+/* line 104, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0; }
+  /* line 111, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  ul.drop-menu li {
+    background: #666;
+    color: rgba(255, 255, 255, 0.7); }
+    /* line 115, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+    ul.drop-menu li:hover {
+      background: #606060; }
+    /* line 118, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+    ul.drop-menu li:last-child {
+      border-radius: 0px 0px 5px 5px; }
+
+/* line 124, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+ul.drop-menu li {
+  display: none; }
+
+/* line 127, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+li:hover > ul.drop-menu li {
+  display: block; }
+
+/* line 136, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+li:hover > ul.drop-menu.menu-1 {
+  perspective: 1000px; }
+
+/* line 139, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+li:hover > ul.drop-menu.menu-1 li {
+  opacity: 0; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: -150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: 0ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: 150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: 300ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: 450ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(6) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: 600ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(7) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: 750ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(8) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: 900ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 142, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-1 li:nth-child(9) {
+    animation: menu1;
+      animation-duration: 300ms;
+      animation-delay: 1050ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+
+@keyframes menu1 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px); } }
+
+/* line 160, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+li:hover > ul.drop-menu.menu-2 {
+  perspective: 1000px; }
+
+/* line 163, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+li:hover > ul.drop-menu.menu-2 li {
+  opacity: 0;
+  transform-origin: top center; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(1) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: -150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(2) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: 0ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(3) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: 150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(4) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: 300ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(5) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: 450ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(6) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: 600ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(7) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: 750ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(8) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: 900ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 167, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-2 li:nth-child(9) {
+    animation: menu2;
+      animation-duration: 300ms;
+      animation-delay: 1050ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+
+@keyframes menu2 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg); }
+  60% {
+    transform: rotateX(50deg); }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg); } }
+
+/* line 188, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+li:hover > ul.drop-menu.menu-3 {
+  perspective: 1000px; }
+
+/* line 191, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+li:hover > ul.drop-menu.menu-3 li {
+  opacity: 0;
+  transform-origin: top right; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(1) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: -150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(2) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: 0ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(3) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: 150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(4) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: 300ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(5) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: 450ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(6) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: 600ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(7) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: 750ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(8) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: 900ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+  /* line 195, C:/Users/vlad/Desktop/WebSeite/threestyle.sass */
+  li:hover > ul.drop-menu.menu-3 li:nth-child(9) {
+    animation: menu3;
+      animation-duration: 300ms;
+      animation-delay: 1050ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+
+@keyframes menu3 {
+  0% {
+    opacity: 0;
+    transform: rotate(-30deg) translateX(30px); }
+  60% {
+    transform: rotate(10deg); }
+  80% {
+    transform: rotate(-5deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0px); } }
+
+/*# sourceMappingURL=threestyle.css.map */

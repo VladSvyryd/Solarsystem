@@ -1,0 +1,357 @@
+
+*,* ::before,* ::after
+{
+     box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+html{
+    height: 100%;
+	width: 100%;
+
+
+
+}
+body{
+    height:100%;
+    margin: 0;
+	width: 100%;
+
+
+}
+header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image:url(Space.jpg);
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    -ms-flex-flow: column;
+    flex-flow: column;
+	/*margin-bottom: 10px;*/
+	background-attachment: fixed;
+    position: relative;
+	overflow: hidden;
+}
+nav{
+
+
+    top: 70px;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 60px;
+
+
+}
+.fixed {
+
+    top: 0;
+	left:25%;
+    z-index: 100;
+  	position: fixed;
+    width: 50%;
+	height: 60px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+li{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-text-decoration-style: solid;
+    text-decoration-style: solid;
+    background-color: #323232;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+li:hover{
+    opacity: 1;
+}
+
+li a {text-decoration: none;
+color: white;
+    font-weight: 900;
+}
+h1{
+    position: relative;
+    display: none;
+    margin: auto;
+    text-align: center;
+    color: rgb(0,0,0);
+	font-size: 72px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	border: rgb(0,0,0) solid 7px;
+	border-radius: 0;
+	padding: 10px 10px;
+
+}
+#background{
+	background-image: url(img/IMG_93353.png);
+	height: 100%;
+	background-size: cover;
+	align-items: center;
+}
+#planets{
+	display: flex;
+	flex-flow: wrap;
+	width: 100%;
+	justify-content: center;
+
+}
+.sonneplaceholder{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+}
+
+.sonne1{
+	display:inline-block;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+
+
+#sonne{
+	animation: popUp 3s infinite;
+
+
+}
+@keyframes popUp{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.020);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+
+.planet{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	height: auto;
+	position: relative;
+	margin-bottom: 10px;
+	border-radius: 55%;
+
+
+}
+.rotatplanets{
+
+    animation: spinny 90s linear infinite;
+
+}
+@keyframes spinny{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.rotatplanets:hover{
+
+    animation-delay:1000s;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+#saturn{
+
+	animation: saturnRotate 20s ease-in-out infinite;
+}
+
+@keyframes saturnRotate{
+	0%{
+		transform: rotate(-30deg);
+	}
+	50%
+	{
+		transform: rotate(-60deg);
+	}
+	100%
+	{transform: rotate(-30deg);}
+}
+.blackhole{
+
+
+	/*background-image: url(img/black_hole1.png);*/
+	text-align: center;
+	height: 212px;
+	width: 166px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 55%;
+	top:65%;
+}
+.cometplacer{
+	position: absolute;
+	left: 7%;
+	top: 20%;
+
+}
+.rotateBlackHole{
+	animation: spinny 90s linear infinite;
+}
+p{
+	display: inline-block;
+	float:left;
+	width: 100%;
+	height: auto;
+	line-height: auto;
+	position: relative;
+	text-transform: full-width;
+	font: 16px;
+	font-family: monospace;
+	background-color: rgba(0,0,0,0.7);
+	margin: 0px;
+	color: azure;
+	font-weight: 500;
+
+}
+p:nth-child(1){
+	font-size: 18px;
+	border-radius: 50% 50% 0 0;
+}
+
+
+
+p:nth-child(3){
+	color: cadetblue;
+	font-style: italic;
+	border-radius: 0 0 50% 50%;
+}
+.popUP{
+	width: 200px;
+	display: flex;
+	flex-flow: column;
+	position: absolute;
+	top: 5%;
+	left: 65%;
+	color: rgba(255,255,255,0.7);
+	border-radius:0px 4px 4px 0px;
+	font-weight: 400;
+	align-items: center;
+	padding: 0;
+	border-radius: 15%;
+
+
+}
+p{
+	display: none;
+
+}
+
+.planet:hover > .popUP p{
+	display: block;
+}
+.planet:hover > .popUP{
+	perspective: 1000px;
+}
+.planet:hover > .popUP p{
+	opacity: 0;
+}
+.planet:hover > .popUP p:nth-child(1){
+	animation-name: menu1;
+	animation-duration: 400ms;
+	animation-delay: 0ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+
+}
+.planet:hover > .popUP p:nth-child(2){
+	animation-name: menu1;
+	animation-duration: 400ms;
+	animation-delay: 200ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+
+}
+.planet:hover > .popUP p:nth-child(3){
+	animation-name: menu1;
+	animation-duration: 400ms;
+	animation-delay: 400ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+
+}
+@keyframes menu1{
+	0%{
+		opacity: 0;
+		transform: rotateY(-90deg) translateY(100px) translateX(-400px);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateY(0deg) transötranslateY(0px)
+			translateX(0px);
+	}
+}
+
+/* This is extra only for popUp windows of the Sun*/
+.sonne1:hover{
+	cursor: pointer;
+}
+.sonne1:hover > .popUP p{
+	display: block;
+}
+.sonne1:hover > .popUP{
+	perspective: 1000px;
+
+}
+.sonne1:hover > .popUP p{
+	opacity: 0;
+}
+.sonne1:hover > .popUP p:nth-child(1){
+	animation-name: menu1;
+	animation-duration: 400ms;
+	animation-delay: 0ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+
+}
+.sonne1:hover > .popUP p:nth-child(2){
+	animation-name: menu1;
+	animation-duration: 400ms;
+	animation-delay: 200ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+
+}
+.sonne1:hover > .popUP p:nth-child(3){
+	animation-name: menu1;
+	animation-duration: 400ms;
+	animation-delay: 400ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+
+}

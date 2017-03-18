@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="twoStyle.css">
+    <title>Two</title>
+</head>
+<body>
+
+<body>
+	<div id="bgd" >
+
+
+		<ul id  ="scene">
+			<li class="layer" data-depth="0.20" id="mars"><img src="img/mars.png" alt="mars"
+			width= "150px"></li>
+
+			<li class="layer" data-depth="0.20" id="earth"><img src="img/earth.png" alt="earth" width= "150px"></li>
+
+			<li class="layer" data-depth="0.20" id="jupiter"><img src="img/jupiter.png" alt="jupiter" width= "150px"></li>
+
+			<li class="layer"data-depth="0.20" id="venus"><img src="img/venus.png" alt=""width= "150px"></li>
+			<li class="layer"data-depth="0.20" id="uranus"><img src="img/uranus.png" alt=""width= "150px"></li>
+			<li class="layer"data-depth="0.20" id="saturn">><img src="img/saturn.png" alt=""width= "150px"></li>
+			<li class="layer"data-depth="0.20" id="pluto"><img src="img/pluto.png" alt=""width= "150px"></li>
+			<li class="layer"data-depth="0.20" id="neptune"><img src="img/neptune.png" alt=""width= "150px"></li>
+			<li class="layer"data-depth="0.20" id="mercury"><img src="img/mercury.png" alt=""width= "150px"></li>
+			<li class="layer"data-depth="0.10" id="sonne"><img src="img/Sonne.png" alt=""width= "300px" ></li>
+		</ul>
+
+
+	</div>
+	<script src="deploy/parallax.min.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+</body>
+
+</body>
+</html>
