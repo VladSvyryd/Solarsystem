@@ -1,26 +1,25 @@
 *,* ::before,* ::after
 	box-sizing: border-box
 html
-	height: 100%
+	height: 100vh
 	width: 100%
+	margin: 0
 body
-	height: 100%
+	height: 100vh
 	width: 100%
 	margin: 0
 
 .placeholder
-
+	position: relative
 	height: 100vh
 	width: 100%
 	background-image: url(/img/threebcg.jpg)
 	background-size: cover
-	display: flex
-	justify-content: center
-	align-items: center
-	position: relative
+	
+	display: inline-block
 	transform-style: preserve-3d
-	flex-flow: column
-    position: absolute
+ 	z-index: 99
+    
 
 .placeholdersun
 
@@ -70,11 +69,13 @@ body
 // Structure
 
 nav
-  position: relative
-  top: -125px
+  position: absolute
   text-align: center
-  z-index: 100
-  display: block
+  z-index: -100
+  display: flex
+  left: calc(50% - 150px)
+  
+ 
 
   > ul
     list-style: none
@@ -83,17 +84,19 @@ nav
     display: inline-block
     background: #ddd
     border-radius: 5px
+	z-index: -100
 
     > li
       float: left
-      width: 100px
-      height: 45px
+      width: 150px
+      height: 70px
       line-height: 45px
       position: relative
       text-transform: uppercase
       font-size: 14px
       color: rgba(0,0,0,0.7)
       cursor: pointer
+	  z-index: -100
 
       &:hover
         background: #d5d5d5
@@ -107,6 +110,7 @@ ul.drop-menu
   left: 0%
   width: 100%
   padding: 0
+  z-index: 100
 
   li
     background: #666
@@ -210,3 +214,90 @@ li:hover > ul.drop-menu.menu-3 li
 	100%
 	  opacity: 1
 	  transform: rotate(0deg) 	translateX(0px)
+.left
+	display: inline-block
+	float: left
+	background-image: url(img/bild2.jpg)
+	height: 100vh
+	width: 100%
+	background-position: right center
+	z-index: 111
+	background-repeat: no-repeat
+	background-size: cover
+	
+	
+
+.right
+	float: right
+	display: inline-block
+	background-image: url(img/bild.jpg)
+	height: 100vh
+	width: 100%
+	z-index: 111
+	left: 50%
+	background-repeat: no-repeat
+	background-size: inherite
+	overflow: hidden
+	background-position: right center
+	
+.logo
+	background-image: url(img/logo.svg)
+	width: 300px
+	height: 300px
+	position: absolute
+	display: block
+	top: calc(50% - 150px)
+	right: calc(50% - 150px)
+	z-index: 111
+	clear: both
+	background-size: cover
+
+.logo:hover
+	transform: scale(1.1)
+	
+	
+.leftanime
+	perspective: 1000px
+	float: left
+	background-size: cover
+	height: 100vh
+	width: 100%
+	z-index: 111
+	animation: moveleft
+	  duration: 1200ms
+	  timing-function: cubic-bezier(0.96, 0.04, 0.99, 1)
+	  fill-mode: forwards
+
+@keyframes moveleft
+	0%
+	  opacity: 1
+	  width: 100%
+	  height: 100vh
+	100%
+	  opacity: 0
+	  width: 0%
+	  height: 100vh
+.rightanime
+	
+	perspective: 1000px
+	float: right
+	background-size: cover
+	height: 100vh
+	width: 100%
+	z-index: 111
+	animation: moveright
+	  duration: 1200ms
+	  timing-function: cubic-bezier(0.96, 0.04, 0.99, 1)
+	  fill-mode: forwards
+
+@keyframes moveright
+	0%
+	  opacity: 1
+	  width: 100%
+	  height: 100vh
+	100%
+	  opacity: 0
+	  width: 0%
+	  height: 100vh
+
+

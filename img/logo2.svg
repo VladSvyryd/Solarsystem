@@ -1,0 +1,28 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <radialGradient spreadMethod="pad" id="svg_2">
+   <stop offset="0" stop-color="#000"/>
+   <stop offset="0" stop-color="#ffffff"/>
+  </radialGradient>
+  <radialGradient y2="1" y1="1" spreadMethod="pad" id="svg_7">
+   <stop offset="0" stop-color="#000"/>
+   <stop offset="0" stop-color="#ffffff"/>
+  </radialGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="302" width="302" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="54" id="svg_1" y="169" x="34.453125" stroke-width="0" stroke="url(#svg_2)" fill="#000000">ExploreIT</text>
+  <rect id="svg_3" height="74" width="4" y="26.5" x="148" stroke-width="0" stroke="url(#svg_2)" fill="#000000"/>
+  <rect stroke="url(#svg_2)" id="svg_4" height="74" width="4" y="200" x="148.5" stroke-width="0" fill="#000000"/>
+  <rect id="svg_5" height="4" width="25" y="148" x="276.5" stroke-width="0" stroke="url(#svg_2)" fill="#000000"/>
+  <rect stroke="url(#svg_7)" id="svg_6" height="4" width="30.000001" y="148" x="-5.000001" stroke-width="0" fill="#000000"/>
+ </g>
+</svg>

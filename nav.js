@@ -3,7 +3,8 @@
 	    setTimeout("explore()", 500);
 
 	   navFixed();
-	   pltclick();
+	   //pltclick();
+	   pltclick1();
 	}
 					);
 
@@ -30,9 +31,25 @@ function sunShine(){
 		width:"610px"
 	},1000, function(){});
 }
-function pltclick(){
+/*function pltclick(){
 $( "#merkur" ).click(function() {
    window.open('/planets/merkur.html');
+	
+	$("img").each(function(i)
+				 {
+
+		window.open("/planets/"+$(this).attr("id")+".html")
+	}
+				 
+				 );
 });
 	}
+*/
+function pltclick1(){
+	$( "img" ).click(function(e) {
 
+		window.open("/planets/"+$(e.currentTarget).attr("id")+".html")
+				 
+	
+	});
+}
